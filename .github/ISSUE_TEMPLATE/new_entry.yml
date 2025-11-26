@@ -1,0 +1,55 @@
+name: New Project Entry
+description: Submit a new failed project to the registry.
+title: "[Project Title]: A brief, descriptive title"
+labels: ["new-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this entry!
+  - type: input
+    id: project-title
+    attributes:
+      label: Project Title
+      description: "What was the name of your project?"
+      placeholder: "e.g., The Social Network for Cats"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "A detailed description of the project idea. What was it supposed to do?"
+      placeholder: "e.g., A platform for cat owners to connect, share photos, and organize playdates."
+    validations:
+      required: true
+  - type: input
+    id: attempt-count
+    attributes:
+      label: Attempt Count
+      description: "How many times was this idea attempted (by you or others, to your knowledge)?"
+      placeholder: "e.g., 1"
+    validations:
+      required: true
+  - type: textarea
+    id: failure-reason
+    attributes:
+      label: Reason for Failure
+      description: "What were the primary reasons the project failed? Be as specific as you can."
+      placeholder: "e.g., Lack of market interest, technical challenges, ran out of funding, etc."
+    validations:
+      required: true
+  - type: textarea
+    id: lessons-learned
+    attributes:
+      label: Lessons Learned
+      description: "What were the key takeaways or lessons learned from this experience?"
+      placeholder: "e.g., The importance of market validation before building a product."
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: "Any relevant links (e.g., demo, GitHub repo, blog post-mortem). Separate multiple links with a comma."
+      placeholder: "e.g., https://github.com/user/my-failed-project, https://my-blog.com/post-mortem"
