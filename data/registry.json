@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "id": "social-network-for-cats-v1",
+        "title": "The Social Network for Cats",
+        "description": "A platform for cat owners to connect, share photos, and organize playdates for their feline friends. It aimed to be the 'Facebook for Cats'.",
+        "tags": ["social-media", "mobile-app", "pets"],
+        "attempts_count": 1,
+        "reasons_for_failure": [
+            "lack-of-market-interest",
+            "user-acquisition-cost",
+            "technical-scaling-issues"
+        ],
+        "attempts": [
+            {
+                "date": "2022-03-15",
+                "description": "Launched a basic iOS and Android app with core social features.",
+                "outcome": "Minimal user engagement; high churn rate after initial download.",
+                "links": []
+            }
+        ],
+        "links": [
+            "https://example.com/social-cat-postmortem",
+            "https://github.com/example/social-cat-app-archive"
+        ],
+        "lessons_learned": "Market validation is crucial before significant development. Cat owners preferred existing platforms or offline interactions for pet-related content. Niche too small and value proposition unclear."
+    }
+]
