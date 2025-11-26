@@ -10,14 +10,17 @@
         "tags",
         "attempts_count",
         "reasons_for_failure",
-        "attempts",
-        "lessons_learned"
+        "attempts"
     ],
     "properties": {
         "id": {
             "type": "string",
-            "description": "Unique identifier for the project (e.g., slug-based from title).",
+            "description": "Unique identifier for the project (e.g., proj-001).",
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "submitted_by": {
+            "type": "string",
+            "description": "The GitHub username of the person who submitted the entry."
         },
         "title": {
             "type": "string",
@@ -33,35 +36,19 @@
             "items": {
                 "type": "string"
             },
-            "minItems": 1,
             "uniqueItems": true
         },
         "attempts_count": {
             "type": "integer",
             "description": "Number of times this idea was attempted.",
-            "minimum": 1
+            "minimum": 0
         },
         "reasons_for_failure": {
             "type": "array",
             "description": "Predefined reasons for the project's failure.",
             "items": {
-                "type": "string",
-                "enum": [
-                    "lack-of-market-interest",
-                    "user-acquisition-cost",
-                    "technical-scaling-issues",
-                    "funding-issues",
-                    "team-conflicts",
-                    "poor-execution",
-                    "timing-issues",
-                    "regulatory-hurdles",
-                    "competition",
-                    "personal-burnout",
-                    "pivot-failure",
-                    "bad-business-model"
-                ]
+                "type": "string"
             },
-            "minItems": 1,
             "uniqueItems": true
         },
         "attempts": {
@@ -70,41 +57,27 @@
             "items": {
                 "type": "object",
                 "required": [
-                    "date",
-                    "description",
-                    "outcome"
+                    "year",
+                    "description"
                 ],
                 "properties": {
-                    "date": {
-                        "type": "string",
-                        "format": "date",
-                        "description": "Date of the attempt (YYYY-MM-DD)."
+                    "year": {
+                        "type": "integer",
+                        "description": "Year of the attempt."
                     },
                     "description": {
                         "type": "string",
                         "description": "Description of what was done in this attempt."
                     },
-                    "outcome": {
-                        "type": "string",
-                        "description": "Result or outcome of this specific attempt."
-                    },
                     "links": {
-                        "type": "array",
-                        "description": "Relevant links for this specific attempt.",
-                        "items": {
-                            "type": "string",
-                            "format": "uri"
+                        "type": "object",
+                        "description": "Relevant links for this specific attempt (e.g., repo, postmortem).",
+                        "properties": {
+                            "repo": { "type": "string", "format": "uri" },
+                            "postmortem": { "type": "string", "format": "uri" }
                         }
                     }
                 }
-            }
-        },
-        "links": {
-            "type": "array",
-            "description": "Optional external links related to the project (demos, repos, blog postmortems).",
-            "items": {
-                "type": "string",
-                "format": "uri"
             }
         },
         "lessons_learned": {

@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Failed Projects Registry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <nav class="main-nav">
+            <a href="index.html">Registry</a>
+            <a href="about.html">About</a>
+        </nav>
         <h1>The Failed Projects Registry</h1>
         <p>A public archive of everything that didn’t work — so the next attempt might.</p>
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Filter by Name...">
+            <select id="tag-filter">
+                <option value="">Filter by Tag</option>
+                <option value="other">Other</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <select id="reason-filter">
+                <option value="">Filter by Failure Reason</option>
+                <option value="other">Other</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+        </div>
+        <div id="metadata-display">
+            <p>Total Projects: <span id="total-projects">0</span></p>
+            <p>Most Common Failure Reason: <span id="most-common-reason">N/A</span></p>
+            <div id="tag-cloud"></div>
+        </div>
     </header>
     <main id="project-list">
         <!-- Projects will be loaded here dynamically -->
     </main>
+
+    <!-- Placeholder for Floating Action Button -->
+    <div class="floating-action-button-placeholder"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

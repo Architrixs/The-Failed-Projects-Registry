@@ -1,27 +1,78 @@
 [
-    {
-        "id": "social-network-for-cats-v1",
-        "title": "The Social Network for Cats",
-        "description": "A platform for cat owners to connect, share photos, and organize playdates for their feline friends. It aimed to be the 'Facebook for Cats'.",
-        "tags": ["social-media", "mobile-app", "pets"],
-        "attempts_count": 1,
-        "reasons_for_failure": [
-            "lack-of-market-interest",
-            "user-acquisition-cost",
-            "technical-scaling-issues"
-        ],
-        "attempts": [
-            {
-                "date": "2022-03-15",
-                "description": "Launched a basic iOS and Android app with core social features.",
-                "outcome": "Minimal user engagement; high churn rate after initial download.",
-                "links": []
-            }
-        ],
-        "links": [
-            "https://example.com/social-cat-postmortem",
-            "https://github.com/example/social-cat-app-archive"
-        ],
-        "lessons_learned": "Market validation is crucial before significant development. Cat owners preferred existing platforms or offline interactions for pet-related content. Niche too small and value proposition unclear."
-    }
+  {
+    "id": "proj-001",
+    "title": "Quantum Leap Social Network",
+    "description": "A social network exclusively for time travelers. The user base was difficult to acquire due to temporal paradoxes and the fact that most users hadn't been born yet.",
+    "tags": ["social", "quantum-physics", "failed-marketing", "dummy"],
+    "attempts_count": 1,
+    "reasons_for_failure": ["Market too niche", "Technical constraints"],
+    "attempts": [
+      {
+        "year": 2023,
+        "description": "Initial launch. The platform worked, but the chicken-and-egg problem was magnified by non-linear timelines. Gained a user in 2042 who complained about the 'retro' UI.",
+        "links": {
+          "repo": "https://github.com/example/q-social",
+          "postmortem": "https://example.blog/q-social-postmortem"
+        }
+      }
+    ]
+  },
+  {
+    "id": "proj-002",
+    "title": "AI-Powered Pet Translator",
+    "description": "A collar that translates your pet's barks and meows into plain English. Unfortunately, it turns out most pets just want to talk about food, naps, and squirrels.",
+    "tags": ["iot", "ai", "hardware", "disappointing-results", "dummy"],
+    "attempts_count": 3,
+    "reasons_for_failure": ["Lack of market interest", "Product-market fit"],
+    "attempts": [
+      {
+        "year": 2021,
+        "description": "Prototype v1. Used a Raspberry Pi. The translation algorithm was 90% accurate but the insights were 100% boring.",
+        "links": {}
+      },
+      {
+        "year": 2022,
+        "description": "Sleeker collar design. Added a 'deep thoughts' filter, which was just a random philosophy quote generator. Users were not fooled.",
+        "links": {}
+      },
+      {
+        "year": 2023,
+        "description": "Pivoted to translating squirrels. This was a technical success but a commercial and existential nightmare.",
+        "links": {}
+      }
+    ]
+  },
+  {
+    "id": "proj-003",
+    "title": "Blockchain To-Do List",
+    "description": "A decentralized to-do list app where every task is a non-fungible token (NFT). Users found the gas fees for adding 'buy milk' to the blockchain were prohibitively expensive.",
+    "tags": ["blockchain", "nft", "over-engineered", "dummy"],
+    "attempts_count": 1,
+    "reasons_for_failure": ["Over-engineered", "High operational cost"],
+    "attempts": [
+      {
+        "year": 2022,
+        "description": "Launched on the Ethereum mainnet. The concept of 'immutably pending' tasks was confusing, and the cost to check off a task sometimes exceeded the cost of the item on the list.",
+        "links": {
+          "repo": "https://github.com/example/nft-todo"
+        }
+      }
+    ]
+  },
+  {
+    "id": "proj-004",
+    "submitted_by": "architrixs",
+    "title": "DevCrush",
+    "description": "A dating site exclusively for software developers, aiming to connect people through shared technical interests and late-night coding sessions.",
+    "tags": ["social", "dating", "web-app", "abandoned"],
+    "attempts_count": 1,
+    "reasons_for_failure": ["Founder burnout", "Lack of market interest"],
+    "attempts": [
+      {
+        "year": 2023,
+        "description": "Initial concept and prototype. The idea was deemed a bit silly and ultimately abandoned due to the founder not having enough time to dedicate to the project.",
+        "links": {}
+      }
+    ]
+  }
 ]
