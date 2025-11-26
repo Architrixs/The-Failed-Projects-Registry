@@ -17,7 +17,7 @@ There are two ways to submit a new entry to the registry:
 
 This is the easiest way to contribute if you are not familiar with Git or JSON.
 
-1.  Go to the [Issues tab](https://github.com/your-username/The-Failed-Projects-Registry/issues) of this repository.
+1.  Go to the [Issues tab](https://github.com/Architrixs/The-Failed-Projects-Registry/issues) of this repository.
 2.  Click on the "New issue" button.
 3.  Choose the "New Entry" template.
 4.  Fill out the required fields in the issue form. Please be as detailed as possible.
@@ -42,10 +42,8 @@ We understand that not everyone is comfortable attaching their name to a project
 
 1.  **Fill out the form:** Please submit the details of your failed project using our anonymous submission form:
     
-    **[>>> Your Google Form Link Here <<<](https://forms.google.com/)** 
+    **[>>> Submit Anonymously Here: Google form <<<](https://forms.gle/ukjShStAGEfvtRsK6)**
     
-    *(Maintainer Note: Create a Google Form with fields that match our `schema.json` and replace the link above. Ensure the form does not collect personally identifiable information.)*
-
 2.  **Review & Integration:** A project maintainer will review the submission to ensure it aligns with our community guidelines and schema. The submission will be anonymized, and any personally identifiable information will be removed before being added to the `registry.json` file. The `submitted_by` field will be omitted for anonymous submissions.
 
 Our Commitment to Anonymity:

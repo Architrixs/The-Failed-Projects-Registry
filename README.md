@@ -10,7 +10,7 @@ Every failed project is a dataset of what didn't work. By sharing these stories,
 
 We welcome contributions from everyone. To add a new entry, please follow these steps:
 
-1.  **Submit an Issue:** Go to our [Issues tab](https://github.com/your-username/The-Failed-Projects-Registry/issues) and create a new issue using the "New Entry" template. Fill in the details of the failed project.
+1.  **Submit an Issue:** Go to our [Issues tab](https://github.com/Architrixs/The-Failed-Projects-Registry/issues) and create a new issue using the "New Entry" template. Fill in the details of the failed project.
 2.  **Create a Pull Request:** If you are comfortable with Git and JSON, you can directly edit the `data/registry.json` file and submit a pull request. Please ensure your submission adheres to our schema.
 
 For more detailed information on how to contribute, please see our [CONTRIBUTING.md](CONTRIBUTING.md) file.
