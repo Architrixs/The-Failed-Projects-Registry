@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProjects(filtered);
     };
 
-    fetch('../data/registry.json')
+    fetch('./data/registry.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
