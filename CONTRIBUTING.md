@@ -36,6 +36,22 @@ If you are comfortable with Git and editing JSON files, you can submit a pull re
 7.  Push your changes to your forked repository.
 8.  Open a pull request from your branch to the `main` branch of this repository.
 
+### Option 3: Anonymous Submission
+
+We understand that not everyone is comfortable attaching their name to a project that didn't work out. To encourage a wider range of stories and lessons learned, we offer an anonymous submission process.
+
+1.  **Fill out the form:** Please submit the details of your failed project using our anonymous submission form:
+    
+    **[>>> Your Google Form Link Here <<<](https://forms.google.com/)** 
+    
+    *(Maintainer Note: Create a Google Form with fields that match our `schema.json` and replace the link above. Ensure the form does not collect personally identifiable information.)*
+
+2.  **Review & Integration:** A project maintainer will review the submission to ensure it aligns with our community guidelines and schema. The submission will be anonymized, and any personally identifiable information will be removed before being added to the `registry.json` file. The `submitted_by` field will be omitted for anonymous submissions.
+
+Our Commitment to Anonymity:
+*   We do not collect email addresses or any personal information through the submission form.
+*   We will do our best to scrub any identifying details from the project description and attempts before adding them to the registry.
+
 ## Examples of Acceptable Entries
 
 To maintain a high-quality and respectful archive, we ask that your submissions adhere to the following guidelines:

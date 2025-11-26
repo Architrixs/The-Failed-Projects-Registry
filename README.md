@@ -14,3 +14,13 @@ We welcome contributions from everyone. To add a new entry, please follow these 
 2.  **Create a Pull Request:** If you are comfortable with Git and JSON, you can directly edit the `data/registry.json` file and submit a pull request. Please ensure your submission adheres to our schema.
 
 For more detailed information on how to contribute, please see our [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## Future Enhancements
+
+The Failed Projects Registry is a living project, and we have many ideas for how to make it even better. Some of the features we are considering for the future include:
+
+*   **A Badge System:** To recognize contributions and highlight interesting patterns in the data.
+*   **Advanced Search and Filtering:** More ways to explore and visualize the data.
+*   **API Access:** A public API to allow others to build on top of this data.
+
+We welcome your ideas and contributions! If you have a feature you'd like to see, please open an issue to discuss it.

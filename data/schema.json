@@ -1,88 +1,92 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Failed Project Entry",
-    "description": "Schema for a single failed project entry in The Failed Projects Registry.",
-    "type": "object",
-    "required": [
-        "id",
-        "title",
-        "description",
-        "tags",
-        "attempts_count",
-        "reasons_for_failure",
-        "attempts"
-    ],
-    "properties": {
-        "id": {
-            "type": "string",
-            "description": "Unique identifier for the project (e.g., proj-001).",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
-        },
-        "submitted_by": {
-            "type": "string",
-            "description": "The GitHub username of the person who submitted the entry."
-        },
-        "title": {
-            "type": "string",
-            "description": "The name of the failed project."
-        },
-        "description": {
-            "type": "string",
-            "description": "A detailed description of the project idea."
-        },
-        "tags": {
-            "type": "array",
-            "description": "List of keywords or categories associated with the project.",
-            "items": {
-                "type": "string"
+    "title": "Failed Projects Registry",
+    "description": "Schema for the registry of failed projects.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "title": "Failed Project Entry",
+        "required": [
+            "id",
+            "title",
+            "description",
+            "tags",
+            "attempts_count",
+            "reasons_for_failure",
+            "attempts"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "Unique identifier for the project (e.g., proj-001).",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
             },
-            "uniqueItems": true
-        },
-        "attempts_count": {
-            "type": "integer",
-            "description": "Number of times this idea was attempted.",
-            "minimum": 0
-        },
-        "reasons_for_failure": {
-            "type": "array",
-            "description": "Predefined reasons for the project's failure.",
-            "items": {
-                "type": "string"
+            "submitted_by": {
+                "type": "string",
+                "description": "The GitHub username of the person who submitted the entry."
             },
-            "uniqueItems": true
-        },
-        "attempts": {
-            "type": "array",
-            "description": "Details of each attempt made on the project.",
-            "items": {
-                "type": "object",
-                "required": [
-                    "year",
-                    "description"
-                ],
-                "properties": {
-                    "year": {
-                        "type": "integer",
-                        "description": "Year of the attempt."
-                    },
-                    "description": {
-                        "type": "string",
-                        "description": "Description of what was done in this attempt."
-                    },
-                    "links": {
-                        "type": "object",
-                        "description": "Relevant links for this specific attempt (e.g., repo, postmortem).",
-                        "properties": {
-                            "repo": { "type": "string", "format": "uri" },
-                            "postmortem": { "type": "string", "format": "uri" }
+            "title": {
+                "type": "string",
+                "description": "The name of the failed project."
+            },
+            "description": {
+                "type": "string",
+                "description": "A detailed description of the project idea."
+            },
+            "tags": {
+                "type": "array",
+                "description": "List of keywords or categories associated with the project.",
+                "items": {
+                    "type": "string"
+                },
+                "uniqueItems": true
+            },
+            "attempts_count": {
+                "type": "integer",
+                "description": "Number of times this idea was attempted.",
+                "minimum": 0
+            },
+            "reasons_for_failure": {
+                "type": "array",
+                "description": "Predefined reasons for the project's failure.",
+                "items": {
+                    "type": "string"
+                },
+                "uniqueItems": true
+            },
+            "attempts": {
+                "type": "array",
+                "description": "Details of each attempt made on the project.",
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "year",
+                        "description"
+                    ],
+                    "properties": {
+                        "year": {
+                            "type": "integer",
+                            "description": "Year of the attempt."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "Description of what was done in this attempt."
+                        },
+                        "links": {
+                            "type": "object",
+                            "description": "Relevant links for this specific attempt (e.g., repo, postmortem).",
+                            "properties": {
+                                "repo": { "type": "string" },
+                                "postmortem": { "type": "string" }
+                            }
                         }
                     }
                 }
+            },
+            "lessons_learned": {
+                "type": "string",
+                "description": "Key takeaways or lessons learned from the project's failure."
             }
-        },
-        "lessons_learned": {
-            "type": "string",
-            "description": "Key takeaways or lessons learned from the project's failure."
         }
     }
 }
