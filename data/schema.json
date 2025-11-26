@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Failed Project Entry",
+    "description": "Schema for a single failed project entry in The Failed Projects Registry.",
+    "type": "object",
+    "required": [
+        "id",
+        "title",
+        "description",
+        "tags",
+        "attempts_count",
+        "reasons_for_failure",
+        "attempts",
+        "lessons_learned"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique identifier for the project (e.g., slug-based from title).",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "title": {
+            "type": "string",
+            "description": "The name of the failed project."
+        },
+        "description": {
+            "type": "string",
+            "description": "A detailed description of the project idea."
+        },
+        "tags": {
+            "type": "array",
+            "description": "List of keywords or categories associated with the project.",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "attempts_count": {
+            "type": "integer",
+            "description": "Number of times this idea was attempted.",
+            "minimum": 1
+        },
+        "reasons_for_failure": {
+            "type": "array",
+            "description": "Predefined reasons for the project's failure.",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "lack-of-market-interest",
+                    "user-acquisition-cost",
+                    "technical-scaling-issues",
+                    "funding-issues",
+                    "team-conflicts",
+                    "poor-execution",
+                    "timing-issues",
+                    "regulatory-hurdles",
+                    "competition",
+                    "personal-burnout",
+                    "pivot-failure",
+                    "bad-business-model"
+                ]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "attempts": {
+            "type": "array",
+            "description": "Details of each attempt made on the project.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "date",
+                    "description",
+                    "outcome"
+                ],
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "description": "Date of the attempt (YYYY-MM-DD)."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Description of what was done in this attempt."
+                    },
+                    "outcome": {
+                        "type": "string",
+                        "description": "Result or outcome of this specific attempt."
+                    },
+                    "links": {
+                        "type": "array",
+                        "description": "Relevant links for this specific attempt.",
+                        "items": {
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    }
+                }
+            }
+        },
+        "links": {
+            "type": "array",
+            "description": "Optional external links related to the project (demos, repos, blog postmortems).",
+            "items": {
+                "type": "string",
+                "format": "uri"
+            }
+        },
+        "lessons_learned": {
+            "type": "string",
+            "description": "Key takeaways or lessons learned from the project's failure."
+        }
+    }
+}

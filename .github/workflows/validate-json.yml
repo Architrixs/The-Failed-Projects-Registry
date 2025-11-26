@@ -1,0 +1,27 @@
+name: Validate Registry JSON
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'data/registry.json'
+      - 'data/schema.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli
+
+      - name: Validate registry.json against schema.json
+        run: ajv validate -s data/schema.json -d data/registry.json --changes
