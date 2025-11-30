@@ -110,9 +110,9 @@
   },
   {
     "id": "proj-005",
-    "title": "JobPilot – Automated Job Submission Engine",
+    "title": "JobPilot – Automated Job Engine",
     "submitted_by": "Manik400",
-    "description": "A system that saves job application links manually through an 'Add' button and later auto-fills and auto-submits all applications using a master profile. Designed to eliminate repetitive login and form-filling across different job platforms by running scheduled apply sessions. The platform attempts to fully automate job submission while navigating legal and ToS-related constraints.",
+    "description": "A system that saves job application links manually through an 'Add' button and later auto-fills and auto-submits all applications using a master profile.",
     "tags": [
       "automation",
       "ai",
