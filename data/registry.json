@@ -3,9 +3,17 @@
     "id": "proj-001",
     "title": "Quantum Leap Social Network",
     "description": "A social network exclusively for time travelers. The user base was difficult to acquire due to temporal paradoxes and the fact that most users hadn't been born yet.",
-    "tags": ["social", "quantum-physics", "failed-marketing", "dummy"],
+    "tags": [
+      "social",
+      "quantum-physics",
+      "failed-marketing",
+      "dummy"
+    ],
     "attempts_count": 1,
-    "reasons_for_failure": ["Market too niche", "Technical constraints"],
+    "reasons_for_failure": [
+      "Market too niche",
+      "Technical constraints"
+    ],
     "attempts": [
       {
         "year": 2023,
@@ -21,9 +29,18 @@
     "id": "proj-002",
     "title": "AI-Powered Pet Translator",
     "description": "A collar that translates your pet's barks and meows into plain English. Unfortunately, it turns out most pets just want to talk about food, naps, and squirrels.",
-    "tags": ["iot", "ai", "hardware", "disappointing-results", "dummy"],
+    "tags": [
+      "iot",
+      "ai",
+      "hardware",
+      "disappointing-results",
+      "dummy"
+    ],
     "attempts_count": 3,
-    "reasons_for_failure": ["Lack of market interest", "Product-market fit"],
+    "reasons_for_failure": [
+      "Lack of market interest",
+      "Product-market fit"
+    ],
     "attempts": [
       {
         "year": 2021,
@@ -46,9 +63,17 @@
     "id": "proj-003",
     "title": "Blockchain To-Do List",
     "description": "A decentralized to-do list app where every task is a non-fungible token (NFT). Users found the gas fees for adding 'buy milk' to the blockchain were prohibitively expensive.",
-    "tags": ["blockchain", "nft", "over-engineered", "dummy"],
+    "tags": [
+      "blockchain",
+      "nft",
+      "over-engineered",
+      "dummy"
+    ],
     "attempts_count": 1,
-    "reasons_for_failure": ["Over-engineered", "High operational cost"],
+    "reasons_for_failure": [
+      "Over-engineered",
+      "High operational cost"
+    ],
     "attempts": [
       {
         "year": 2022,
@@ -64,9 +89,17 @@
     "submitted_by": "architrixs",
     "title": "DevCrush",
     "description": "A dating site exclusively for software developers, aiming to connect people through shared technical interests and late-night coding sessions.",
-    "tags": ["social", "dating", "web-app", "abandoned"],
+    "tags": [
+      "social",
+      "dating",
+      "web-app",
+      "abandoned"
+    ],
     "attempts_count": 1,
-    "reasons_for_failure": ["Founder burnout", "Lack of market interest"],
+    "reasons_for_failure": [
+      "Founder burnout",
+      "Lack of market interest"
+    ],
     "attempts": [
       {
         "year": 2023,
@@ -74,5 +107,27 @@
         "links": {}
       }
     ]
+  },
+  {
+    "id": "proj-005",
+    "title": "JobPilot – Automated Job Engine",
+    "submitted_by": "Manik400",
+    "description": "A system that saves job application links manually through an 'Add' button and later auto-fills and auto-submits all applications using a master profile.",
+    "tags": [
+      "automation",
+      "ai",
+      "job-search",
+      "productivity",
+      "chrome-extension",
+      "legal-challenge"
+    ],
+    "attempts_count": 0,
+    "reasons_for_failure": [
+      "Full auto-submit introduces ToS and legal complications",
+      "Complexity in handling different ATS, forms, and security flows",
+      "Security risks in handling credentials",
+      "Auto Login automation blocked by OTP/CAPTCHA"
+    ],
+    "attempts": []
   }
 ]
