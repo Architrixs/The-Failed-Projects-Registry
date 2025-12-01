@@ -118,16 +118,19 @@
       "ai",
       "job-search",
       "productivity",
-      "chrome-extension",
-      "legal-challenge"
+      "chrome-extension"
     ],
-    "attempts_count": 0,
+    "attempts_count": 1,
     "reasons_for_failure": [
-      "Full auto-submit introduces ToS and legal complications",
-      "Complexity in handling different ATS, forms, and security flows",
-      "Security risks in handling credentials",
-      "Auto Login automation blocked by OTP/CAPTCHA"
+      "Legal Challenge",
+      "Security risks Handling Credentials"
     ],
-    "attempts": []
+    "attempts": [
+      {
+        "year": 2025,
+        "description": "Full auto-submit introduces ToS and legal complications. The idea had Complexity in handling different ATS, forms, and security flows, and Auto Login automation blocked by OTP/CAPTCHA",
+        "links": {}
+      }
+    ]
   }
 ]
